@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Paws: Giving Hope to Street Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    margin: 0;
+    padding: 1;
+    background-color: #f0f7f4;
+    color: #333;
+}
+
+.hero{
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #70c1b3;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #607a85;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #247ba0;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.reason-card {
+    background-color: #e8f3f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+}
+
+.dog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.dog-card {
+    background-color: #e8f3f0;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dog-card:hover {
+    transform: translateY(-5px);
+}
+
+.dog-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.adopt-btn {
+    background-color: #70c1b3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adopt-btn:hover {
+    background-color: #247ba0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #70c1b3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #247ba0;
+}
+
+footer {
+    background-color: #70c1b3;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202209/States_Kerala_stray_dogs.jpg?VersionId=OxACqqoGlrBznaGMQ2o36w32gtdthnEP&size=690:388"="A hopeful street dog looking for a home" class="hero-image">
+            <div class="text-align">
+                <h1>Street Paws</h1>
+                <p>Giving Hope, One Paw at a Time</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#why-adopt">Why Adopt?</a></li>
+                <li><a href="#available-dogs">Available Dogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Welcome to Street Paws</h1>
+                <div class="flex-container">
+                    <div class="image-container">
+                        <img src="https://static.toiimg.com/thumb/imgsize-23456,msid-109832765,width-600,resizemode-4/109832765.jpg" alt="Street dogs in need" width="600" height="400">
+                    </div>
+                    <div class="text-container">
+                        <p>Street Paws was born from a simple yet powerful idea: every dog deserves a loving home, especially those who have known nothing but the harsh realities of street life. Our journey began when our founder, Sarah, encountered a trembling, injured puppy huddled in an alley on a cold, rainy night.</p>
+                        <p>That puppy, now named Hope, became the inspiration for Street Paws. As Sarah nursed Hope back to health, she realized that there were countless other dogs like her, waiting for someone to see their potential and give them a chance at a better life.</p>
+                        <p>Today, Street Paws is dedicated to rescuing, rehabilitating, and rehoming street dogs. We believe that these resilient animals, who have survived against all odds, have an incredible capacity for love and loyalty. By choosing to adopt a street dog, you're not just getting a pet – you're gaining a grateful companion and changing a life forever.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="flex-container">
+                    <div class="image-container">
+                        <img src="jac" width="500" height="300">
+                        <img src="https://www.shutterstock.com/image-photo/indian-street-dog-puppies-playing-260nw-1939161385.jpg" alt="jackie sits here" width="500" height="300">
+                        <img src="https://www.shutterstock.com/image-photo/indian-street-dog-puppies-playing-260nw-1939161385.jpg" alt="jackie sits here" width="500" height="300"><img src="https://www.shutterstock.com/image-photo/indian-street-dog-puppies-playing-260nw-1939161385.jpg" alt="jackie sits here" width="500" height="300">
+                 </div>
+                    <div class="text-container">
+                        
+                        <p>The story of Street Paws is deeply personal. One chilly winter evening, as I walked home from school, I noticed something unusual in a dry drain along the roadside. There, shivering and scared, was a small dog – dirty, frail, and trembling from the cold. His eyes were filled with fear but also a glimmer of hope, as though he knew someone might help him.</p>
+                        <p> I couldn’t leave him there. Despite not knowing much about taking care of a dog at the time, I gently carried him home, wrapped in my scarf to keep him warm. I named him Jackie. That night, Jackie became a part of my family and changed my life forever.</p>
+                        <p>Over time, as I cared for Jackie and watched him grow into a happy, loving companion, I realized how many other dogs like him were out there – abandoned, cold, and scared, waiting for someone to give them a chance. Jackie’s story became my inspiration, and that’s how Street Paws was born: a mission to rescue, rehabilitate, and rehome street dogs, giving them the second chance they deserve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-adopt">
+            <h2>Why Adopt a Street Dog?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Save a Life</h3>
+                    <p>By adopting a street dog, you're giving a second chance to an animal that has faced hardship. Your decision can literally save a life.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Loyal Companions</h3>
+                    <p>Street dogs often show immense gratitude and loyalty to their adopters. They form strong bonds and offer unconditional love.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Unique Personalities</h3>
+                    <p>Each street dog has a unique personality shaped by their experiences. They can be incredibly adaptable, intelligent, and quick learners.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Health Benefits</h3>
+                    <p>Many street dogs have diverse genetic backgrounds, which can make them less prone to hereditary health issues common in purebred dogs.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Cost-Effective</h3>
+                    <p>Adopting a street dog is often less expensive than buying a purebred. Our adoption fees include initial vaccinations and spaying/neutering.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Make a Difference</h3>
+                    <p>By adopting, you're helping to reduce the stray dog population and inspiring others to consider adoption over buying.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="available-dogs">
+            <h2>Dogs Available for Adoption</h2>
+            <div class="dog-grid">
+                <div class="dog-card">
+                    <img src="https://media.istockphoto.com/id/1366356999/photo/indian-street-dog-posing-to-camera.jpg?s=612x612&w=0&k=20&c=C0L1yA27gf1mDJ7a8MMRvllzqlswslOJ9j-q7J58OXY=" alt="Buddy, a friendly mixed breed dog" class="dog-image">
+                    <h3>Buddy</h3>
+                    <p>Buddy is a 8 months-old mixed breed with a heart of gold. He loves playing fetch and is great with children.</p>
+                    <button class="adopt-btn">Adopt Buddy</button>
+                </div>
+                <div class="dog-card">
+                    <img src="https://images.pexels.com/photos/28760363/pexels-photo-28760363/free-photo-of-stray-dog-relaxing-on-urban-street-in-kolkata.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Luna, a gentle Labrador mix" class="dog-image">
+                    <h3>Luna</h3>
+                    <p>Luna is a 3-year-old. She's gentle, affectionate, and loves water. Perfect for an active family!</p>
+                    <button class="adopt-btn">Adopt Luna</button>
+                </div>
+               
+                <div class="dog-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-qSug7-p4y-xyxRqo4Zx6zDqUquIyaHpFw&s" alt="Max, a playful terrier mix" class="dog-image">
+                    <h3>Max</h3>
+                    <p>Max is a 6 months-old terrier mix full of energy and playfulness. He would thrive in a home with a yard to play in.</p>
+                    <button class="adopt-btn">Adopt Max</button>
+                </div>
+                <div class="dog-card">
+                    <img src="https://media.istockphoto.com/id/944376422/photo/homeless-puppy-dog-sitting-alone-in-the-middle-of-the-street.jpg?s=612x612&w=0&k=20&c=bmwNLGdEir34XdrdwhcOEnJWt_JO6C0mdzVe2cMDAhU=" alt="Max, a playful terrier mix" class="dog-image">
+                    <h3>Tuffy</h3>
+                    <p>Tuffy is a 5 months-old full of playfulness. He would thrive in a home with a yard to play in.</p>
+                    <button class="adopt-btn">Adopt Tuffy</button>
+                </div>
+                <div class="dog-card">
+                    <img src="https://cdn.create.vista.com/api/media/small/639454946/stock-photo-lonely-cute-brown-puppy-sitting-road-blurry-background" alt="Max, a playful terrier mix" class="dog-image">
+                    <h3>Sheru</h3>
+                    <p>Sheru, a spirited 5-month-old, is full of energy and always ready for an adventure.</p>
+                    <button class="adopt-btn">Adopt Sheru</button>
+                </div>
+                <div class="dog-card">
+                    <img src="https://thumbs.dreamstime.com/b/indian-street-dog-poor-male-106748686.jpg" alt="Max, a playful terrier mix" class="dog-image">
+                    <h3>Broody</h3>
+                    <p>"Broody, at just 1.5 months old, is a playful little bundle of joy, brimming with curiosity and love."
+
+
+
+
+
+
+                    </p>
+                    <button class="adopt-btn">Adopt Broody</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Street Paws. All rights reserved.</p>
+        <p>Address: 123 Rescue Lane, Dogtown, ST 12345 | Phone: (555) 123-4567 | Email: info@streetpaws.org</p>
+    </footer>
+</body>
+</html>
